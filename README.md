@@ -22,7 +22,7 @@ EmbyPremiere = type=http-response,script-path=https://gitlab.com/iptv-org/embypu
 
 [MITM]
 hostname = mb3admin.com</code></pre>
-<br/>输完点保存后，再次点击 default.conf -> 编辑配置 -> 开启 HTTPS 解密 -> 生成新的 CA 证书 -> 安装 CA 证书 -> 同意安装描述文件
+<br/>输完点保存后，再次找到 default.conf -> 点击右边的感叹号，进入配置编辑 -> HTTPS解密 -> 开启 HTTPS 解密 -> 生成新的 CA 证书 -> 安装 CA 证书 -> 同意安装描述文件
 <br><img src="https://raw.githubusercontent.com/cantoblanco/eb1-script/master/https.png"><br>
 <br/>4. 然后去手机设置 -> 点右边的描述文件已下载 -> 查看描述文件 ->安装
 <br><img src="https://raw.githubusercontent.com/cantoblanco/eb1-script/master/cert.png"><br>
