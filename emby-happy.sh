@@ -11,18 +11,18 @@ fi
 
 wget --no-check-certificate https://raw.githubusercontent.com/cantoblanco/eb1-script/main/emby-happy.tar
 tar -xf emby-happy.tar
-cp ./Emby.Web.dll   /var/packages/EmbyServer/target/system/Emby.Web.dll 
-cp ./connectionmanager.js /var/packages/EmbyServer/target/system/dashboard-ui/modules/emby-apiclient/connectionmanager.js  
-cp ./embypremiere.js /var/packages/EmbyServer/target/system/dashboard-ui/embypremiere/embypremiere.js  
-cp ./Emby.Server.Implementations.dll /var/packages/EmbyServer/target/system/Emby.Server.Implementations.dll  
+cp ./emby-happy/Emby.Web.dll   /var/packages/EmbyServer/target/system/Emby.Web.dll 
+cp ./emby-happy/connectionmanager.js /var/packages/EmbyServer/target/system/dashboard-ui/modules/emby-apiclient/connectionmanager.js  
+cp ./emby-happy/embypremiere.js /var/packages/EmbyServer/target/system/dashboard-ui/embypremiere/embypremiere.js  
+cp ./emby-happy/Emby.Server.Implementations.dll /var/packages/EmbyServer/target/system/Emby.Server.Implementations.dll  
 
 
 
 rm -rf emby-happy.tar
-rm -rf connectionmanager.js
-rm -rf Emby.Server.Implementations.dll
-rm -rf Emby.Web.dll
-rm -rf embypremiere.js
+rm -rf ./emby-happy/connectionmanager.js
+rm -rf ./emby-happy/Emby.Server.Implementations.dll
+rm -rf ./emby-happy/Emby.Web.dll
+rm -rf ./emby-happy/embypremiere.js
 rm -rf emby-happy.sh
 
 echo "-------------------全部完成-------------------"
