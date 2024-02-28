@@ -11,10 +11,10 @@ fi
 
 wget --no-check-certificate https://raw.githubusercontent.com/cantoblanco/eb1-script/main/emby-happy.tar
 tar -xf emby-happy.tar
-cp /root/Emby.Web.dll   /var/packages/EmbyServer/target/system/Emby.Web.dll 
-cp /root/connectionmanager.js /var/packages/EmbyServer/target/system/dashboard-ui/modules/emby-apiclient/connectionmanager.js  
-cp /root/embypremiere.js /var/packages/EmbyServer/target/system/dashboard-ui/embypremiere/embypremiere.js  
-cp /root/Emby.Server.Implementations.dll /var/packages/EmbyServer/target/system/Emby.Server.Implementations.dll  
+cp ./Emby.Web.dll   /var/packages/EmbyServer/target/system/Emby.Web.dll 
+cp ./connectionmanager.js /var/packages/EmbyServer/target/system/dashboard-ui/modules/emby-apiclient/connectionmanager.js  
+cp ./embypremiere.js /var/packages/EmbyServer/target/system/dashboard-ui/embypremiere/embypremiere.js  
+cp ./Emby.Server.Implementations.dll /var/packages/EmbyServer/target/system/Emby.Server.Implementations.dll  
 
 
 
